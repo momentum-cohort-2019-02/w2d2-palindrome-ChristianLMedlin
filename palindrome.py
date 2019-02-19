@@ -1,6 +1,6 @@
 first_string = input("Enter your maybe palindrome maybe not a palindrome here.")
 
-no_spaces = first_string.replace(" ", "").replace("!", "").replace(",", "").replace(":", "")
+no_spaces = first_string.replace(" ", "").replace("!", "").replace(",", "").replace(":", "").replace(".", "")
 #Firstly, removes spaces, then removes !'s, then removes ,'s, then removes :'s. 
 
 
@@ -13,6 +13,6 @@ no_lowers = no_spaces.lower()
 #print(no_lowers)
 
 if no_lowers[:] == no_lowers[::-1]:
-    print('This is a palindrome.')
+    print(no_lowers, 'is a palindrome')
 else:
-    print("This is not a palindrome.")
+    print(no_lowers, ' is not a palindrome')
